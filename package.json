@@ -1,20 +1,46 @@
 {
-  "name": "cook",
+  "name": "@owfdr/cook",
   "version": "0.1.0",
   "source": "src/index.ts",
   "main": "dist/main.js",
+  "bin": "bin/index.js",
   "license": "MIT",
   "type": "module",
+  "description": "Kickstart your project effortlessly with cook.",
+  "homepage": "https://github.com/owfdr/cook",
   "scripts": {
     "watch": "parcel watch",
     "build": "parcel build",
-    "release": "yarn build && standard-version"
+    "release": "yarn build && standard-version",
+    "publish": "npm publish --access public"
   },
   "files": [
+    "bin",
     "dist",
     "LICENSE",
     "README.md"
   ],
+  "keywords": [
+    "cli",
+    "create",
+    "generate",
+    "initialize",
+    "new project"
+  ],
+  "author": {
+    "name": "owfdr",
+    "email": "owfdr@ourworld.center"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/owfdr/cook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/owfdr/cook/issues"
+  },
+  "engines": {
+    "node": ">=16"
+  },
   "dependencies": {
     "@inquirer/confirm": "^2.0.12",
     "@inquirer/input": "^1.2.11",
