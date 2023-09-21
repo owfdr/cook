@@ -4,7 +4,7 @@
 
 Kickstart your project effortlessly.
 
-> 🧱 Note: This project is still under heavy development.
+> 🧱 Caution: Active development—expect breaking changes.
 
 ## Install
 
