@@ -1,5 +1,6 @@
 import { program } from "commander";
 import { spawn, exec } from "child_process";
+import packageData from "../package.json";
 import Logger from "./class/Logger";
 import Inquirer from "./class/Inquirer";
 import path from "path";
@@ -8,7 +9,7 @@ import os from "os";
 
 program
   .name("cook")
-  .version("0.1.0")
+  .version(packageData.version)
   .description("Simple tool for creating new projects.")
   .parse(process.argv);
 
