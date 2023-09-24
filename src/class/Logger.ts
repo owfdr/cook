@@ -1,8 +1,8 @@
 import fs from "fs";
-import path from "path";
 import chalk from "chalk";
 
-const ASCII_FILE_PATH = path.resolve(__dirname, "../../", "asset", "ascii.txt");
+const ASCII_FILE_PATH = new URL("../../asset/ascii.txt", import.meta.url)
+  .pathname;
 
 export default class Logger {
   asciiLogo: string;
