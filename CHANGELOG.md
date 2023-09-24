@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/owfdr/cook/compare/v0.1.1...v0.1.2) (2023-09-24)
+
+
+### Features
+
+* add update notifier ([ac439eb](https://github.com/owfdr/cook/commit/ac439eb1190aa463e174b32c71af31dd9954a523))
+
+
+### Bug Fixes
+
+* display correct version ([78b444d](https://github.com/owfdr/cook/commit/78b444d62f16f9bf9288c8dfd691e1300c9ddfb7))
+* force close error ([cd6f173](https://github.com/owfdr/cook/commit/cd6f17390057863ce0e5f93070423a23606cc907))
+
 ### [0.1.1](https://github.com/owfdr/cook/compare/v0.1.0...v0.1.1) (2023-09-24)
 
 
