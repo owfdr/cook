@@ -1,6 +1,7 @@
 import { program } from "commander";
 import { spawn, exec } from "child_process";
 import packageData from "../package.json";
+import updateNotifier from "update-notifier";
 import Logger from "./class/Logger";
 import Inquirer from "./class/Inquirer";
 import path from "path";
@@ -57,5 +58,8 @@ const inquirer = new Inquirer();
   }
 
   logger.projectReady(projectPath);
+
+  updateNotifier({ pkg: packageData }).notify();
+
   return process.exit(0);
 })();
