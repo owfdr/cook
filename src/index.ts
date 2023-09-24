@@ -20,10 +20,20 @@ const inquirer = new Inquirer();
 (async () => {
   logger.showLogo();
 
-  const folder = await inquirer.selectFolder();
-  const name = await inquirer.inputProjectName();
-  const useGit = await inquirer.initWithGit();
-  const useVscode = await inquirer.openWithVscode();
+  let folder = "";
+  let name = "";
+  let useGit = false;
+  let useVscode = false;
+
+  try {
+    folder = await inquirer.selectFolder();
+    name = await inquirer.inputProjectName();
+    useGit = await inquirer.initWithGit();
+    useVscode = await inquirer.openWithVscode();
+  } catch {
+    // Ignore user force close (Ctr+C) for now.
+    return process.exit(1);
+  }
 
   const home = os.homedir();
   const projectPath = path.join(home, folder, name);
