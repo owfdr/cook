@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/owfdr/cook/compare/v0.1.2...v0.1.3) (2023-09-24)
+
+
+### Bug Fixes
+
+* add package json to files ([7c06b31](https://github.com/owfdr/cook/commit/7c06b313040cea8dcc852a446c0807e4ce3b3f54))
+
 ### [0.1.2](https://github.com/owfdr/cook/compare/v0.1.1...v0.1.2) (2023-09-24)
 
 
